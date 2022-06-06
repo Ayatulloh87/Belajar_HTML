@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Belajar HTML</title>
+</head>
+
+<body>
+    <!--Heading untuk-->
+    <h1>Hello World!</h1>
+    <h2>Heading 1</h2>
+    <h3>Heading 2</h3>
+    <h4>Heading 3</h4>
+    <h5>Heading 4</h5>
+    <h6>Heading 5</h6>
+
+    <!--paragraf use a p element-->
+    <!--elemen strong untuk bold kata-->
+    <P><strong>Belajarlah sebelum kau dipelajari</strong></P>
+    <!--elemen br untuk mengganti baris (enter) -->
+    <br>
+    <!--elemen em untuk garis miring-->
+    <P>Belajarlah sebelum <em>kau</em> dipelajari</P>
+    <br>
+    <!--elemen ins untuk garis bawah kata-->
+    <P><ins>Belajarlah</ins> sebelum kau dipelajari</P>
+    <!--elemen hr untuk menggaris bawah-->
+    <hr>
+    <P>Belajarlah sebelum kau dipelajari</P>
+    <hr>
+
+    <!-- link elemen-->
+    <a href="https://www.google.com/">link Google</a>
+    <br><a href="https://www.facebook.com/">facebook</a>
+    <!--link ke hai file-->
+    <br><a href="hai.html">link hai file</a>
+    <!--link hai html dalam folder-->
+    <br><a href="a/hai.html">link hai file folder</a>
+
+    <!--elemen image-->
+    <br><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+    <!--dari img file-->
+    <!--atribut width untuk ukuran lebar-->
+    <!--atribut hight untuk tinggi-->
+    <!--align untuk tempat penulisan kanan kiri-->
+    <br><img src="google.png" width="200" height="100" align="left " alt="google">
+    <!--klik logo menuuju link-->
+    <br>
+    <a href="https://www.google.com/"><img src="google.png" width="100" height="50" align="left " alt="google"></a>
+    <!--atribut alt untuk nama gambar jikalau tidak ada/gamabr rusak kelihatan-->
+    <br>
+    <img src="nana.png" alt="nana">
+
+    <!--List unodered (simbol)-->
+    <ul>
+        <li>apa</li>
+        <li>baca</li>
+        <li>cantik</li>
+    </ul>
+    <!--List odered (123abc)-->
+    <!--atribut type untuk tipe penomoran misal a untuk abcde-->
+    <ol type="a">
+        <li>apa</li>
+        <li>baca</li>
+        <li>cantik</li>
+    </ol>
+
+    <!--table elemen-->
+    <!--table elemen tr = tabel row-->
+    <!--table elemen th = tabel heading-->
+    <!--table elemen td = tabel data-->
+    <!--atribut border untuk menambahkan garis/tabel-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Jenis Kelamin</th>
+                <th>Hobi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AL</td>
+                <td>Laki-Laki</td>
+                <td>Game</td>
+            </tr>
+            <tr>
+                <td>LIA</td>
+                <td>Perempuan</td>
+                <td>Makan</td>
+            </tr>
+            <!--atribut colspan untuk mengambil kolom/menggabungkan kolom-->
+            <tr>
+                <td colspan="2">RIN</td>
+                <td>Bola</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--elemen iframe untuk mengambil frame dari suatu website-->
+    <!--atribut frame border untuk memberi border pada frame-->
+    <iframe src="https://www.wikipedia.org" width="600" height="200" frameborder="0"></iframe>
+    <br><iframe src="hai.html" frameborder="1"></iframe>
+    <iframe src="" frameborder="0"></iframe>
+
+    <!--elemen form-->
+    <form action="">
+        <!--atribut placeholder untuk membarikan arahan-->
+        <p>Nama: <input type="text" name="" placeholder="isi yang bener cuk"></p>
+        <!--type radio untuk pemilihan tipe radio-->
+        <!--pada atribut name untuk mengontrol agar bisa dipilih 1-->
+        <p>Jenis Kelamin: <input type="radio" name="gender"> Laki-Laki <input type="radio" name="gender">Perempuan</p>
+        <!--elemen select untuk membuat dropdown-->
+        <!--elemen option adalah untuk pilihannya-->
+        <!--atribut selected untuk mendefauld-->
+        <p>Kota Kelahiran:
+            <select name="" id="">
+                <option value="">Bandung</option>
+                <option value="" selected>Jakarta</option>
+                <option value="">Jakarta</option>
+            </select>
+        </p>
+        <!--elemen textarea untuk menambahkan textarea-->
+        <!--atribut cols untuk lebar dan rows untuk tinggi-->
+        <p>Pertanyaan: <textarea name="" id="" cols="30" rows="10"></textarea> </p>
+        <!--type checkbox untuk ceklist-->
+        <!--atribut checked unuk defauld cek-->
+        <p><input type="checkbox">ayo makan bareng di langit</p>
+        <p><input type="checkbox" checked>ayo makan bareng di laut</p>
+
+        <!--elemen button-->
+        <button type="submit">makan</button>
+    </form>
+</body>
+
+</html>
